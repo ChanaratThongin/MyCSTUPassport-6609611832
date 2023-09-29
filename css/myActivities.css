@@ -63,15 +63,14 @@ body {
     position: relative;
     top: 50px;
     height: 100dvh;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
     place-items: center;
 }
 
 .grid-col-1 {
-    padding: 1rem;
-    margin: 1rem;
+    padding: 20px;
 }
 
 img {
@@ -79,33 +78,10 @@ img {
     border-radius: 5px;
 }
 
-.contact {
-    margin-bottom: 50px;
-}
-
 ul {
-    list-style-position: inside;
-    list-style-type: square;
+    list-style-type: none;
 }
 
-.grid-col-2 {
-    padding: 1rem;
-    margin: 1rem;
-}
-
-video {
-    margin-bottom: 40px;
-    border-radius: 5px;
-}
-
-.about-me {
+.about-advisor {
     margin-bottom: 25px;
-}
-
-h2:hover {
-    color: rgb(8,55,255);
-    background: -webkit-linear-gradient(180deg, rgba(8,55,255,1) 13%, rgba(78,147,254,1) 78%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
