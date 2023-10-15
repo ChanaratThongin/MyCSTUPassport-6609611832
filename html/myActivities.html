@@ -4,40 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/myActivities.css">
-    <title>My Activities</title>
+    <title>My CSTU Passport</title>
 </head>
 <body>
-    <div class="navBar">
-        <div class="logo">
-            <a href="./myActivities.html">My CSTU Passport</a>
+    <!--========== header ==========-->
+    <header>
+        <nav>
+            <div class="logo">My Activities</div>
+            <ul>
+                <li><a class="menu" href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a class="menu" href="../index.html#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a class="menu" href="./myActivities.html"><i class="fa-solid fa-map"></i> Activities</a></li>
+                <li><a class="menu" href="./myAdvisor.html"><i class="fa-solid fa-user-group"></i> Advisor</a></li>
+            </ul>
+        </nav>
+    </header> <!-- end header -->
+
+    <!--========== activities page ==========-->
+    <section id="activities-page">
+        <div class="title">
+            <h1>Hello, I'm <span>Earth</span><br>these are my activities at <span>CSTU</span></h1>
         </div>
-        <ul>
-            <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="./myActivities.html"><i class="fa-solid fa-map"></i> Activities</a></li>
-            <li><a href="./myAdvisor.html"><i class="fa-solid fa-user-group"></i> Advisor</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <div class="grid-col-1">
-            <img src="../image/firstmeet.jpg" alt="firstmeet" width="360px" height="180px">
+    </section> <!-- end activities page -->
+
+    <!--========== activities ==========-->
+    <section id="activities">
+        <div class="header">
+            <h1>Activities</h1>
         </div>
-        <div class="grid-col-2">
-            <div class="about-advisor">
-                <div><strong>First Meet CSTU 2023</strong></div>
-                <div><strong>Date:</strong> 6 ส.ค. 2566</div>
-                <div><strong>รายละเอียดกิจกรรม :</strong></div>
-                <div>
-                    <ul>
-                        <li>กิจกรรมที่สนุกสนานสุดๆ ไม่ได้ให้แค่ความสนุกเท่านั้น</li>
-                        <li>ยังต่อยอดไปสู่ความสัมพันธ์ฉันท์พี่น้อง</li>
-                        <li>เป็นการเตรียมความพร้อม</li>
-                        <li>ในการก้าวเข้าสู่การศึกษาที่ครอบครัว CSTU </li>
-                        <li>นำมามอบให้กับน้องใหม่ CSTU38</li>
+        <div class="grid-container">
+            <div class="image-1">
+                <img src="../image/orientation.jpg" alt="orientation">
+            </div>
+            <div class="container-text-1">
+                <div class="activity-1">
+                    <div class="title">Thammasat Orientation 2023</div>
+                    <ul class="text">
+                        <li>กิจกรรมที่ 1 Fill Your UniLIFE <br> ได้เข้าฟังบรรยายเรื่องต่างๆภายในมหาลัยและรับชมการแสดง ณ กิติยาคาร</li>
+                        <li>กิจกรรมที่ 2 Fill Your THAMMASAT SPIRIT <br> ได้เข้าฟังบรรยายเรื่องต่างๆภายในคณะ และร่วมเล่นกิจกรรมกับรุ่นพี่</li>
+                        <li>Date: 04/08/2566</li>
                     </ul>
                 </div>
             </div>
+            <div class="container-text-2">
+                <div class="activity-2">
+                    <div class="title">First Meet CSTU</div>
+                    <ul class="text">
+                        <li>ได้ร่วมทำกิจกรรมทำความรู้จักเพื่อนๆและรุ่นพี่ในสาขา <br> และร่วมเล่นกิจกรรมต่างๆที่รุ่นพี่จัดเตรียมไว้ให้</li>
+                        <li></li>
+                        <li>Date: 06/08/2566</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-2">
+                <img src="../image/firstmeet.jpg" alt="firstmeet">
+            </div>
         </div>
-    </div>
+    </section> <!-- end activities -->
+
+    <!--========== footer ==========-->
+    <footer>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Earth Chanarat</p>
+    </footer> <!-- end footer -->
 </body>
 </html>

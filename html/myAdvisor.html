@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/myAdvisor.css">
-    <title>My Advisor</title>
+    <title>My CSTU Passport</title>
 </head>
 <body>
-    <div class="navBar">
-        <div class="logo">
-            <a href="./myAdvisor.html">My CSTU Passport</a>
+    <!--========== header ==========-->
+    <header>
+        <nav>
+            <div class="logo">My Advisor</div>
+            <ul>
+                <li><a class="menu" href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a class="menu" href="../index.html#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a class="menu" href="./myActivities.html"><i class="fa-solid fa-map"></i> Activities</a></li>
+                <li><a class="menu" href="./myAdvisor.html"><i class="fa-solid fa-user-group"></i> Advisor</a></li>
+            </ul>
+        </nav>
+    </header> <!-- end header -->
+
+    <!--========== advisor page ==========-->
+    <section id="advisor-page">
+        <div class="title">
+            <h1>Hello, I'm <span>Earth</span><br>this is my <span>advisor</span></h1>
         </div>
-        <ul>
-            <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="./myActivities.html"><i class="fa-solid fa-map"></i> Activities</a></li>
-            <li><a href="./myAdvisor.html"><i class="fa-solid fa-user-group"></i> Advisor</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <div class="grid-col-1">
-            <img src="../image/Lecture-WP2.png" alt="myAdvisor" width="150px" height="180px">
+    </section> <!-- end advisor page -->
+
+    <!--========== advisor ==========-->
+    <section id="advisor">
+        <div class="header">
+            <h1>Advisor</h1>
         </div>
-        <div class="grid-col-2">
-            <div class="about-advisor">
-                <div><strong>Asst. Prof. Dr. Wanida Putthividhya</strong></div>
-                <div><strong>Contact:</strong> wanidap@cs.tu.ac.th</div>
-                <div><strong>Research Interest:</strong></div>
-                <div>
-                    <ul>
-                        <li>Quality of Service (Network QoS)</li>
-                        <li>Congestion Control</li>
-                        <li>Network Security and Operating systems</li>
+        <div class="grid-container">
+            <div class="image">
+                <img src="../image/advisor.png" alt="chanarat thongin">
+            </div>
+            <div class="container-text-1">
+                <div class="info">
+                    <div class="title">INFORMATION</div>
+                    <ul class="text">
+                        <li><strong>Asst. Prof. Dr. Wanida Putthividhya</strong></li>
+                        <li><strong>Contact:</strong> wanidap@cs.tu.ac.th</li>
+                        <li><strong>Research Interest:</strong>
+                            <ul>
+                                <li>Quality of Service (Network QoS) <br> Congestion Control <br> Network Security and Operating systems</li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section> <!-- end advisor -->
+
+    <!--========== footer ==========-->
+    <footer>
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Earth Chanarat</p>
+    </footer> <!-- end footer -->
 </body>
 </html>
