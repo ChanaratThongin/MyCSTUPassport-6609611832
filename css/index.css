@@ -1,0 +1,170 @@
+#homepage::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(45%);
+    background-image: url("../image/bg-home.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#homepage {
+    min-height: calc(100vh - 60px);
+    height: 100%;
+	width: 100%;
+	text-align: left;
+	position: relative;
+	border-bottom: 1px solid #15191d;
+
+    & .title {
+        padding-top: 14%;
+        padding-left: 5%;
+        display: block;
+        position: relative;
+        float: left;
+        font-size: 49px;
+        letter-spacing: 0.08rem;
+        overflow: hidden;
+        animation: fade 1.5s;
+
+        & h1 {
+            color: #ffffff;
+            & span {
+                color: #ffffff;
+                display: inline-block;
+	            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        @media (max-width: 811px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 461px) {
+            font-size: 28px;
+        }
+
+        @media (max-width: 372px) {
+            font-size: 20px;
+        }
+    }
+}
+
+#about {
+    background-color: #000000;
+    height: 150%;
+	width: 100%;
+	border-bottom: 1px solid #15191d;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 10vh 0 15vh 0;
+        
+        & h1 {
+            font-size: 49px;
+            color: #ffffff;
+
+            @media (max-width: 416px) {
+                font-size: 36px;
+            }
+        }
+    } 
+
+    & .grid-container {
+        display: grid;
+        align-items: center;
+        justify-content: space-around;
+        column-gap: 2rem;
+        row-gap: 45vh;
+        padding: 5% 5% 10% 5%;
+        grid-template-areas: 
+            "image info-1"
+            "info-2 video";
+
+        @media (max-width: 811px) {
+            grid-template-areas: 
+                "image"
+                "info-1"
+                "video"
+                "info-2";
+            row-gap: 5rem;
+        }
+
+        & .image {
+            grid-area: image;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            & img {
+                width: 200px;
+                height: auto;
+            }
+        }      
+        
+        & .container-text-1 {
+            grid-area: info-1;
+            
+            & .information {
+                padding-bottom: 5vh;
+            }
+        }
+
+        & .container-text-2 {
+            grid-area: info-2;
+
+            & .contact {
+                padding-bottom: 5vh;
+            }
+        }
+
+        & .video {
+            & video {
+                border-radius: 10px;
+                width: 450px;
+                height: auto;
+
+                @media (max-width: 811px) {
+                    width: 400px;
+                }
+
+                @media (max-width: 416px) {
+                    width: 350px;
+                }
+            }
+        }
+
+        & .information .title,
+          .education .title,
+          .contact .title,
+          .hobbies .title {
+                font-size: 32px;
+                font-weight: 800;
+                letter-spacing: 0.08rem;
+                padding: 0 0 1vh 0;
+        }
+
+        & .text li {
+            padding-bottom: 2%;
+        }
+
+        
+    }
+}
+
+footer {
+    background-color: #15191d;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
